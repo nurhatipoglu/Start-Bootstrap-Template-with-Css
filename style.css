@@ -1,0 +1,162 @@
+body{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:8vh;
+    /*width:208vh;*/
+    width:100%; /*bu sayede navbar ın genişliği hep sayfanın boyutu kadar yani kaplıyor.*/
+    /*background-color: #5d4954;*/
+    background-color:rgb(64, 64, 104);
+    position:fixed;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.nav_links li{
+    list-style: none; /*li lerin önünde liste kullanırkan olan yuvarlağı siliyoruz.*/
+}
+
+.nav_links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+}
+
+.anasayfa{
+    height:710px;
+    width:100%;/*sayfanın boyutuyla ne kadar oynarsam oyniyim ekran genişliği kadar açık mavi kısım kaplayacak.*/
+    background-color:rgb(118, 201, 201);
+}
+
+#tanıtım_resmi{
+    width:200px;
+    margin:200px 0px 200px 0px; /*resmin üstünden ve alıtndan boşluk bırakılır.*/
+    background-color:rgb(64, 64, 104);
+    border:1px;
+    border-radius: 20%;
+}
+
+.tanıtım{
+    margin: -220px 0px 300px 0px;
+    width:auto;
+    height:auto;
+}
+
+/*resmi div e sığdırmak için kalıp*/
+.mydiv img { 
+    width: auto;
+    height : auto; /*resmin tam ortada olması sağlanır.*/
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+.mydiv{
+    width: 70px;
+    border: 2px solid brown ;
+    width: 30%;/*bir sayfaya 4 resim sığdır demektir.*/
+    margin-top: 5px; /*üstten 5 px boşluk*/
+    margin-left: 20px;/*soldan 5 px boşluk*/
+    padding: 0px;/*içerde boşluk yok */
+    display: inline-block;/*yan yana blok elemanları sırala(div,p...). Resimler yan yana sıralanır.*/
+    transition: all 2s;
+}
+
+  .mydiv:hover{
+    border:2px solid black ; /*resmin üstüne geldiğinde border(çerçeve)2s de siyaha dönüşssün*/
+    width: 32%; /*resmin üstüne geldiğinde div in büyüklüğü 5sn de büyüsün.*/
+    background-color:rgb(118, 201, 201);
+}
+
+.about{
+    height:500px;
+    width:100%; /*sayfanın tamamını kaplasın(genişlik bakımından)*/
+    background-color:rgb(118, 201, 201);
+}
+
+.parca1, .parca2{
+    border: 1px solid brown;
+    width: 30%;
+    display: inline-block;/*yan yana blok elemanları sırala(div,p...). Resimler yan yana sıralanır.*/
+    margin-top: 35px; /*üstten 5 px boşluk*/
+    padding: 0px;/*içerde boşluk yok */
+}
+
+.alt_kısım{
+    height:200px;
+    width:100%; /*sayfanın tamamını kaplasın(genişlik bakımından)*/
+    background-color:rgb(64, 64, 104);
+}
+
+.footer{
+    height:50px;
+    width:100%; /*sayfanın tamamını kaplasın(genişlik bakımından)*/
+    background-color:rgb(2, 2, 53);
+}
+
+.location, .around, .freelancer{
+    border: 1px solid brown;
+    width: 20%;
+    display: inline-block;/*yan yana blok elemanları sırala(div,p...). Resimler yan yana sıralanır.*/
+    margin-top: 35px; /*üstten 5 px boşluk*/
+    padding: 0px; /*içerde boşluk yok */
+    margin-left: 40px;
+}
+
+@media screen and (max-width:700px){
+    /*700px den küçük olursa bunlar olsun*/
+    html{
+        color:red;
+        text-align: center; /*sayfadaki tüm yazıları ortalar.*/
+    }
+    hr{
+        width:30px;
+    }
+    #form{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (min-width:700px){
+    /*700px den küçük olursa bunlar olsun*/
+    html{
+        text-align: center; /*sayfadaki tüm yazıları ortalar.*/
+    }
+    hr{
+        width:30px;
+    }
+    #form{
+        padding-left:200px;
+    }
+}
+
+@media screen and (min-width:900px){
+    /*700px den küçük olursa bunlar olsun*/
+    html{
+        text-align: center; /*sayfadaki tüm yazıları ortalar.*/
+    }
+    hr{
+        width:30px;
+    }
+    #form{
+        padding-left:400px;
+    }
+}
+
+.fas fa-star{
+    width:auto;
+    height:auto;
+}
+
+hr{
+    width: 150px; float: left; margin-left: 540px; height: 2px; background-color: whitesmoke;
+}
